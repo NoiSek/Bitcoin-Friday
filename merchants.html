@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>11/29/13.</title>
+  <link rel="stylesheet" href="src/css/foundation.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <script src="src/js/vendor/custom.modernizr.js"></script>
+</head>
+<body>
+  <div id="cover">
+    <div class="row">
+      <div id="date-wrapper"><div id="date">11/<span id="day">29</span>/2013</div></div>
+    </div>
+  </div>
+  <div id="main">
+    <div class="row">
+      <div id="deal-wrapper" class="small-12 columns">
+        <div class="row">
+          <form id="deal-submit" class="custom" data-abide>
+            <div class="small-12 large-7 columns">
+              <div class="row">
+                <div class="small-6 columns">
+                  <label for="company_name" title="Feel free to use your website URL, but please defer to your actual business name.">Company Name</label>
+                  <input name="company_name" type="text" placeholder="Bitcoin Foundation" required>
+                  <small class="error">A company name is required.</small>
+                </div>
+                <div class="small-6 columns">
+                  <label for="deal_url">Link to your offer</label>
+                  <input name="deal_url" type="url" placeholder="http://bitcoinfoundation.org/" required>
+                  <small class="error">A valid link to your deal is required.</small>
+                </div>
+              </div>
+              <div class="row">
+                <div class="small-6 columns">
+                  <label for="deal_category">Deal Category</label>
+                  <select name="deal_category" required>
+                    <option value="1">Adult</option>
+                    <option value="2">Apparel</option>
+                    <option value="3">Art</option>
+                    <option value="4">Accessories</option>
+                    <option value="5">Bitcoin Mining</option>
+                    <option value="6" selected>Charity</option>
+                    <option value="7">Consumables</option>
+                    <option value="8">Electronics</option>
+                    <option value="9">Entertainment</option>
+                    <option value="10">Finance</option>
+                    <option value="11">Gifts</option>
+                    <option value="12">Hosting / Servers</option>
+                    <option value="13">Music</option>
+                    <option value="14">Software</option>
+                    <option value="15">Travel</option>
+                    <option disabled>Don't see your category?</option>
+                    <option value="0">Other / Misc</option>
+                  </select>
+                  <small class="error">A category is required.</small>
+                </div>
+                <div class="small-6 columns">
+                  <label for="deal_type">Deal Type</label>
+                  <select name="deal_type">
+                    <option value="1">Physical Goods</option>
+                    <option value="2">Digital Goods</option>
+                    <option value="3" selected>Services</option>
+                  </select>
+                  <small class="error">A deal type is required.</small>
+                </div>
+              </div>
+              <div class="row">
+                <div class="small-12 columns">
+                  <label for="deal_title">Deal Title</label>
+                  <input id="deal-title" name="deal_title" type="text" placeholder="Donate to Bitcoin Foundation!" required>
+                  <small class="error">A deal title is required.</small>
+                  <div id="char-limit-wrapper">You have <span id="char-limit">50</span> characters left.</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="small-12 columns">
+                  <label>Deal Description (Limited Markdown accepted)</label>
+                  <textarea id="deal-description" name="description" placeholder="# Donate to the Bitcoin Foundation                                                                                      Join us in celebrating Bitcoin with **Bitcoin Friday**! Lorem ipsum *dolor set* amet." height="400px" required></textarea>
+                  <small class="error">A description is required.</small>
+                  <p>Syntax: *italic*, **bold**, # Header Text</p>
+                </div>
+              </div>
+            </div>
+            <div class="small-12 large-5 columns">
+              <div class="row">
+                <div class="small-12 columns">
+                  <a href="http://bitcoinfoundation.org" target="_blank">
+                    <div class="deal-image-wrapper">
+                      <img id="deal-image" src="src/img/250x250.png" />
+                      <span class="deal-image-description"><h4>Donate to the Bitcoin Foundation!</h4><br /><p>Join us in celebrating Bitcoin with <strong>Bitcoin Friday!</strong> Lorem ipsum <em>dolor set</em> amet. Here's what your image looks like with a reasonably lengthy description.</p></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="small-8 small-centered columns">
+                  <div class="small-12 columns">
+                    <input type="file" accept="image/*" name="deal_image" id="deal-image-field" required>
+                    <small class="error">You MUST have a 250x250 image for your deal.</small>
+                  </div>
+                  <div class="small-12 columns">
+                    <input id="deal-submit" type="submit" class="button prefix" value="Submit">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="thanks-wrapper" class="small-12 columns">
+        <div id="success-message">
+          <h1>Great! You're all done. We'll see you on <strong class="highlight">November 29th</strong></h1> 
+        </div>
+        <div class="row">
+          <div class="small-2 columns">
+            <a href="/"><img src="src/img/logo2_dark.png" title="Home"/></a>
+          </div>
+          <div class="small-10 columns">
+            <p id="thanks">Thanks for choosing to join Bitcoin Friday! If you have any questions or concerns, send an email to: <strong><a href="contact@bitcoinfriday2013.com">contact@bitcoinfriday2013.com</a></strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="src/js/foundation.min.js"></script>
+  <script src="src/js/foundation/foundation.forms.js"></script>
+  <script src="src/js/foundation/foundation.abide.js"></script>
+  <script src="src/js/foundation/foundation.alerts.js"></script>
+  <script src="src/js/merchants.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45353864-1', 'bitcoinfriday2013.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

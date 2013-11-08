@@ -1,0 +1,314 @@
+/* ----------------------------------------- */
+/* ## Globals
+/* ## Splash Page
+/* ## Deal Submission Page
+/* ----------------------------------------- */                                                                                                              
+/*              ,,                          ,,                                      ,,        ,,                    
+/* `7MM"""Yp,   db   mm                     db                  `7MM"""YMM          db      `7MM                    
+/*   MM    Yb        MM                                           MM    `7                    MM                    
+/*   MM    dP `7MM mmMMmm ,p6"bo   ,pW"Wq.`7MM  `7MMpMMMb.        MM   d `7Mb,od8 `7MM   ,M""bMM   ,6"Yb.`7M'   `MF'
+/*   MM"""bg.   MM   MM  6M'  OO  6W'   `Wb MM    MM    MM        MM""MM   MM' "'   MM ,AP    MM  8)   MM  VA   ,V  
+/*   MM    `Y   MM   MM  8M       8M     M8 MM    MM    MM        MM   Y   MM       MM 8MI    MM   ,pm9MM   VA ,V   
+/*   MM    ,9   MM   MM  YM.    , YA.   ,A9 MM    MM    MM        MM       MM       MM `Mb    MM  8M   MM    VVV    
+/* .JMMmmmd9  .JMML. `MbmoYMbmd'   `Ybmd9'.JMML..JMML  JMML.    .JMML.   .JMML.   .JMML.`Wbmd"MML.`Moo9^Yo.  ,V     
+/*                                                                                                          ,V      
+/*                                                                                                       OOb"       
+/*  ============================================================================================================== */
+/*  78 111 100 100 121 32 62 32 110 111 105 46 116 46 115 101 107 64 103 109 97 105 108 46 99 111 109 */
+/* 
+/* ----------------------------------------- */
+/* ## Globals */
+/* ----------------------------------------- */
+@font-face {
+  font-family: 'nexa';
+  src: url('fontfabric_-_nexaregular-webfont.eot');
+  src: url('fontfabric_-_nexaregular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fontfabric_-_nexaregular-webfont.woff') format('woff'),
+       url('fontfabric_-_nexaregular-webfont.ttf') format('truetype'),
+       url('fontfabric_-_nexaregular-webfont.svg#nexa_regularregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #eee;
+
+  background: #222;
+}
+
+form .button {
+  background: #ba2525;
+  background: -moz-linear-gradient(top,  #ba2525 0%, #af2626 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ba2525), color-stop(100%,#af2626));
+  background: -webkit-linear-gradient(top,  #ba2525 0%,#af2626 100%);
+  background: -o-linear-gradient(top,  #ba2525 0%,#af2626 100%);
+  background: -ms-linear-gradient(top,  #ba2525 0%,#af2626 100%);
+  background: linear-gradient(to bottom,  #ba2525 0%,#af2626 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba2525', endColorstr='#af2626',GradientType=0 );
+
+  border: 0px;
+  box-shadow: 0 1px 0 rgba(255, 100, 100, 0.25) inset;
+
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+form .button.prefix {
+  -moz-border-radius-topright: 2px;
+  -webkit-border-top-right-radius: 2px;
+  border-top-right-radius: 2px;
+
+  -moz-border-radius-bottomright: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+
+  -moz-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+form .button:hover {
+  background: #4c0f0f;
+
+  border: 0px;
+  box-shadow: 0 1px 0 rgba(255, 100, 100, 0.25) inset;
+}
+
+hr {
+  color: rgb(54, 54, 54);
+
+  border-top: 1px solid rgba(120, 120, 120, 0.6);
+
+  height: 2px;
+}
+
+label {
+  color: #A0A0A0;
+
+  font-size: 16pt;
+
+  margin-bottom: 10px;
+}
+
+#cover {
+  background: url(../img/cover.jpg) 50% 50%;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover!important;
+  
+  display: block;
+  position: relative;
+
+  min-height: 200px;
+  height: 30%;
+
+  width: 100%;
+}
+
+#date-wrapper {
+  color: #efefef;
+
+  background: rgba(0,0,0,.6);
+
+  font-family: Arial;
+  font-size: 48pt;
+  font-weight: bold;
+
+  text-align: center;
+
+  width: 100%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 50%; left: 0; bottom: 0; right: 0;
+}
+
+#date {
+  margin-top: 25px;
+}
+
+
+#date #day {
+  color: #f02a2a;
+}
+
+#main {
+  background: #0a0a0a;
+  background: #111111;
+  background: -moz-linear-gradient(top,  #111111 0%, #0a0a0a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#0a0a0a));
+  background: -webkit-linear-gradient(top,  #111111 0%,#0a0a0a 100%);
+  background: -o-linear-gradient(top,  #111111 0%,#0a0a0a 100%);
+  background: -ms-linear-gradient(top,  #111111 0%,#0a0a0a 100%);
+  background: linear-gradient(to bottom,  #111111 0%,#0a0a0a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#0a0a0a',GradientType=0 );
+
+  border-top: 1px solid rgba(49, 49, 49, 0.5);
+
+  min-height: 70%;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+.type-highlight {
+  color: #fff;
+}
+
+/* ----------------------------------------- */
+/* ## Splash Page */
+/* ----------------------------------------- */
+
+#description {
+  font-size: 16pt;
+
+  margin-top: 25px;
+}
+
+#description #highlight {
+  color: #000;
+
+  background: #f02a2a;
+
+  font-weight: bold;
+
+  padding: 1px;
+}
+
+#logo {
+  background: url('../img/logo2_dark.png') no-repeat;
+
+  margin: auto;
+
+  display: block;
+
+  height: 105px;
+  width: 352px;
+}
+
+#merchant-signup {
+  margin-top: 25px;
+}
+
+#signup-wrapper {
+  margin-top: 50px;
+}
+
+/* ----------------------------------------- */
+/* ## Deal Submission Page */
+/* ----------------------------------------- */
+
+#char-limit {
+  color: #fff;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+#char-limit-wrapper {
+  color: #b4b4b4;
+  font-size: 8pt;
+
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+#deal-description {
+  min-height: 200px;
+}
+
+#deal-submit {
+  margin-top: 10px;
+}
+
+#deal-wrapper {
+  margin-top: 40px;
+}
+
+#thanks {
+  font-family: Arial;
+  font-size: 16pt;
+
+  line-height: 1.2em;
+}
+
+#success-message {
+  display: none;
+}
+
+#success-message h1 {
+  color: #e1e1e1;
+}
+
+#success-message .highlight {
+  color: #f02a2a;
+}
+
+#thanks-wrapper {
+  margin-top: 25px;
+}
+
+.deal-image-wrapper {
+  position: relative;
+
+  margin: 0px auto 15px auto;
+
+  height: 250px;
+  width: 250px;
+}
+
+.deal-image-description {
+  color: #eee;
+  background: rgba(30,30,30,.8);
+  opacity: 0;
+
+  position: absolute;
+
+  left: 0px;
+  bottom: 0px;
+
+  padding: 8px;
+
+  height: 0px;
+  -webkit-transition: height 200ms ease;
+  -moz-transition: height 200ms ease;
+  -ms-transition: height 200ms ease;
+  -o-transition: height 200ms ease;
+  transition: height 200ms ease;
+}
+
+.deal-image-description h4 {
+  color: #fff;
+  margin-bottom: -10px;
+}
+
+.deal-image-description p {
+  font-size: 12pt;
+  line-height: 1.2em;
+}
+
+.deal-image-wrapper {
+  overflow: hidden;
+}
+
+.deal-image-wrapper:hover {
+  cursor: pointer;
+}
+
+.deal-image-wrapper:hover .deal-image-description {
+  opacity: 1;
+  height: 250px;
+}

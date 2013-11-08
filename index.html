@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>11/29/13.</title>
+  <link rel="stylesheet" href="src/css/foundation.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <script src="src/js/vendor/custom.modernizr.js"></script>
+</head>
+<body>
+  <div id="cover">
+    <div class="row">
+      <div id="date-wrapper"><div id="date">11/<span id="day">29</span>/2013</div></div>
+    </div>
+  </div>
+  <div id="main">
+    <div class="row">
+      <div class="small-10 small-centered columns">
+        <div id="signup-wrapper">
+          <div class="large-6 small 12 columns">
+            <img src="src/img/logo2_dark.png" />
+            <p id="description">One of a kind deals, one day only. We're bringing hundreds of merchants together to provide the <span id="highlight">Black Friday</span> experience to Bitcoin users.</p>
+          </div>
+          <div class="large-6 small 12 columns">
+            <div class="row">
+              <form id="user-signup" data-abide>
+                <div class="row collapse">
+                  <label>I'm a <span class="small-caps type-highlight"><strong>user</strong></span> interested in deals, keep me posted:</label>
+                  <div class="small-8 columns">
+                    <input name="email" type="email" required placeholder="satoshi@domain.com">
+                    <small class="error">A valid email address is required.</small>
+                  </div>
+                  <div class="small-4 columns">
+                    <input type="hidden" name="type" value="user">
+                    <input type="submit" class="button prefix" value="Sign Me Up!">
+                  </div>
+                </div>
+              </form>
+              <hr />
+              <form id="merchant-signup" data-abide>
+                <div class="row collapse">
+                  <label>I'm a <span class="small-caps type-highlight"><strong>merchant</strong></span> with a deal I want advertised on Bitcoin Friday:</label>
+                  <div class="small-6 columns">
+                    <input name="email" type="email" required placeholder="satoshi@domain.com">
+                    <small class="error">A valid email address is required.</small>
+                  </div>
+                  <div class="small-6 columns">
+                    <input name="url" type="url" required placeholder="Company / Product URL">
+                    <small class="error">A valid URL is required. (Remember to add http://)</small>
+                  </div>
+                  <input type="hidden" name="type" value="merchant">
+                  <input type="submit" class="button prefix" value="Contact Me"> 
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'src/js/vendor/zepto.min' : 'src/js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="src/js/foundation.min.js"></script>
+  <script src="src/js/foundation/foundation.abide.js"></script>
+  <script src="src/js/foundation/foundation.alerts.js"></script>
+  <script src="src/js/main.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45353864-1', 'bitcoinfriday2013.com');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
